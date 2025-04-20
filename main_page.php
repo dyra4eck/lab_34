@@ -90,10 +90,6 @@ $dates = $conn->query("SELECT
 <div class="main-container">
     <div class="left-column">
         <?php include 'menu.php'; ?>
-        <div id="sidebar">
-            <h2 class="section-title">Акции и новости</h2>
-            <!-- Акции остаются без изменений -->
-        </div>
     </div>
 
     <div id="content">

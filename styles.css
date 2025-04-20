@@ -354,3 +354,101 @@ body {
     text-align: center;
     margin-top: 30px;
 }
+
+/* Стили для кликабельных элементов сайдбара */
+#sidebar .sidebar-news-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+#sidebar .sidebar-news-link:hover {
+    background: #f5f5f5;
+}
+
+/* Стили для статей на news.php */
+.news-article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db; /* Синяя полоса слева */
+}
+
+.news-article h3 {
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+}
+
+.news-date {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.news-article p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Раскрывающиеся статьи */
+.article-header {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.article-header:hover {
+    background: #f1f1f1;
+}
+
+.article-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.news-image {
+    width: 100%;
+    max-width: 500px; /* Уменьшил максимальную ширину */
+    height: 400px; /* Фиксированная высота */
+    object-fit: cover; /* Сохраняет пропорции без искажений */
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.news-gallery {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Перенос на новую строку при нехватке места */
+}
+
+.news-gallery img {
+    width: 48%;
+    height: 400px; /* Фиксированная высота для миниатюр */
+    object-fit: cover; /* Кадрирование по центру */
+    border-radius: 8px;
+}
+
+.booking-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.booking-button:hover {
+    background: #2980b9;
+}

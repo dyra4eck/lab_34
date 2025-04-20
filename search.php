@@ -13,14 +13,6 @@ $passengers = (int)($_GET['passengers'] ?? 1);
 <div class="main-container">
     <div class="left-column">
         <?php include 'menu.php'; ?>
-        <div id="sidebar">
-            <h2 class="section-title">Акции и новости</h2>
-            <p><strong>Скидка 20%</strong><br>на рейсы в Европу</p>
-            <hr>
-            <p><strong>Новый маршрут</strong><br>Москва - Токио</p>
-            <hr>
-            <p><strong>Бонусные мили</strong><br>Для постоянных клиентов</p>
-        </div>
     </div>
 
     <div id="content">

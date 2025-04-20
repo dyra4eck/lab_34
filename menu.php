@@ -3,6 +3,7 @@
     <nav class="main-menu">
         <a href="main_page.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'main_page.php' ? 'active' : '' ?>">Главная</a>
         <a href="search.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'search.php' ? 'active' : '' ?>">Поиск билетов</a>
+        <a href="news.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'news.php' ? 'active' : '' ?>">Новости</a> <!-- Добавлено -->
         <a href="account.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'account.php' ? 'active' : '' ?>">Личный кабинет</a>
         
         <div class="user-section">
@@ -16,4 +17,18 @@
             <?php endif; ?>
         </div>
     </nav>
+</div>
+<div id="sidebar">
+    <h2 class="section-title">Акции и новости</h2>
+    <a href="news.php" class="sidebar-news-link">
+        <p><strong>Скидка 20%</strong><br>на рейсы в Европу</p>
+    </a>
+    <hr>
+    <a href="news.php" class="sidebar-news-link">
+        <p><strong>Новый маршрут</strong><br>Москва - Токио</p>
+    </a>
+    <hr>
+    <a href="news.php" class="sidebar-news-link">
+        <p><strong>Бонусные мили</strong><br>Для постоянных клиентов</p>
+    </a>
 </div>
