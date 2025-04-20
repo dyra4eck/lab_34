@@ -462,19 +462,23 @@ body {
 
 /* Полоса с наградами */
 .awards-section {
-    background: linear-gradient(45deg, #2c3e50, #34495e);
-    padding: 25px 0;
-    margin: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('background.webp') center/cover no-repeat;
+    height: 90px; /* Фиксированная высота секции */
+    background-size: auto 600%; /* Сжимает изображение по высоте */
+    background-position: center; /* Центрирует фон */
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+    color: white;
+    overflow: hidden; /* Скрывает части фона, выходящие за границы */
 }
 
 .awards-content {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
+    gap: 30px;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -482,11 +486,11 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: white;
-    padding: 12px 20px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    min-width: 300px;
 }
 
 .award-badge:hover {
@@ -495,8 +499,8 @@ body {
 }
 
 .award-icon {
-    height: 45px;
-    width: 45px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 
