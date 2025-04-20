@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($result->num_rows > 0) {
             $client = $result->fetch_assoc();
-            if ($password === $client['password']) {
+            if (!empty($password) && password_verify($password, $client['password'])) {
                 $_SESSION['user_id'] = $client['client_id'];
                 $_SESSION['user_name'] = $client['name'];
                 $_SESSION['user_login'] = $client['login'];
