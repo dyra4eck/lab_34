@@ -1,7 +1,8 @@
 <div id="nav">
     <h2 class="section-title">Меню</h2>
     <nav class="main-menu">
-        <a href="main_page.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'main_page.php' ? 'active' : '' ?>">Главная</a>
+        <a href="main_page.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'main_page.php' ? 'active' : '' ?>">Список билетов</a>
+        <a href="about.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : '' ?>">О нас</a>
         <a href="search.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'search.php' ? 'active' : '' ?>">Поиск билетов</a>
         <a href="news.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'news.php' ? 'active' : '' ?>">Новости</a> <!-- Добавлено -->
         <a href="account.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'account.php' ? 'active' : '' ?>">Личный кабинет</a>
