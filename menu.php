@@ -4,13 +4,13 @@
         <a href="main_page.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'main_page.php' ? 'active' : '' ?>">Список билетов</a>
         <a href="about.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : '' ?>">О нас</a>
         <a href="search.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'search.php' ? 'active' : '' ?>">Поиск билетов</a>
-        <a href="news.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'news.php' ? 'active' : '' ?>">Новости</a> <!-- Добавлено -->
+        <a href="news.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'news.php' ? 'active' : '' ?>">Новости</a>
         <a href="account.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'account.php' ? 'active' : '' ?>">Личный кабинет</a>
         
         <div class="user-section">
             <?php if(isset($_SESSION['user_id'])): ?>
                 <span class="user-greeting"><?= htmlspecialchars($_SESSION['user_name']) ?></span>
-                <a href="cart.php" class="nav-link">Корзина</a>
+                <a href="cart.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'cart.php' ? 'active' : '' ?>">Корзина</a> <!-- Добавлена проверка -->
                 <a href="logout.php" class="nav-link">Выйти</a>
             <?php else: ?>
                 <a href="register.php" class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'register.php' ? 'active' : '' ?>">Регистрация</a>
